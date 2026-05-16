@@ -1,165 +1,41 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chess Winning Strategy</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }body {
-  background: #111;
-  color: white;
-  padding: 40px;
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chess Strategy</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }body { background:#0f0f0f; color:white; height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
+.card { width:min(94vw, 520px); height:min(94vh, 760px); background:#171717; border:1px solid #2a2a2a; border-radius:20px; padding:18px; display:flex; flex-direction:column; justify-content:center; }
 
-h1 {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
+h1 { font-size:18px; text-align:center; margin-bottom:10px; }
 
-.subtitle {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 50px;
-  font-size: 18px;
-}
+ol { list-style:none; display:flex; flex-direction:column; gap:10px; }
 
-.section {
-  background: #1b1b1b;
-  border: 1px solid #333;
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 30px;
-}
+li { background:#222; border:1px solid #2f2f2f; border-radius:12px; padding:10px; text-align:center; font-size:14px; }
 
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-}
+.core { margin-top:14px; background:white; color:black; border-radius:12px; padding:12px; text-align:center; font-weight:bold; font-size:13px; } </style>
 
-.rule {
-  background: #222;
-  border-left: 5px solid white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.rule:hover {
-  transform: scale(1.02);
-  background: #2b2b2b;
-}
-
-.core-rule {
-  background: white;
-  color: black;
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.core-rule h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.core-rule p {
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-  </style>
 </head>
-<body>  <div class="container"><h1>Chess Winning System</h1>
-
-<p class="subtitle">
-  A complete strategy system focused on center control, development, king safety, and avoiding blunders.
-</p>
-
-<div class="section">
-  <h2>1. Opening Phase</h2>
-
-  <div class="rule">Take the center immediately with pawns.</div>
-  <div class="rule">Protect the center after taking it.</div>
-  <div class="rule">Develop knights before bishops.</div>
-  <div class="rule">Do not move the same piece twice early.</div>
-  <div class="rule">Castle early for king safety.</div>
-  <div class="rule">Do not bring your queen out too early.</div>
-  <div class="rule">Every move should improve development or control.</div>
-  <div class="rule">Always check if a piece is hanging before moving.</div>
-</div>
-
-<div class="section">
-  <h2>2. Anti-Blunder System</h2>
-
-  <div class="rule">After every opponent move ask: what changed?</div>
-  <div class="rule">Check all attacks on your pieces.</div>
-  <div class="rule">Look for checks, captures, and threats.</div>
-  <div class="rule">Never premove important positions.</div>
-  <div class="rule">Scan the full board before every move.</div>
-  <div class="rule">Double-check tactical moves.</div>
-  <div class="rule">When ahead, simplify the position.</div>
-  <div class="rule">Never attack with an unsafe king.</div>
-</div>
-
-<div class="section">
-  <h2>3. Middlegame Strategy</h2>
-
-  <div class="rule">Improve your worst piece first.</div>
-  <div class="rule">Control open files with rooks.</div>
-  <div class="rule">Place knights on strong protected squares.</div>
-  <div class="rule">Attack weak pawns and weak squares.</div>
-  <div class="rule">Avoid unnecessary pawn moves.</div>
-  <div class="rule">Keep your pieces coordinated.</div>
-  <div class="rule">Trade pieces when ahead.</div>
-  <div class="rule">Keep pressure when you have more space.</div>
-</div>
-
-<div class="section">
-  <h2>4. Endgame Rules</h2>
-
-  <div class="rule">Activate the king immediately.</div>
-  <div class="rule">Push passed pawns carefully.</div>
-  <div class="rule">Keep rooks behind passed pawns.</div>
-  <div class="rule">Use opposition in king and pawn endings.</div>
-  <div class="rule">Centralize all remaining pieces.</div>
-  <div class="rule">Simplify winning positions.</div>
-  <div class="rule">Calculate before pawn trades.</div>
-  <div class="rule">Do not rush winning positions.</div>
-</div>
-
-<div class="section">
-  <h2>5. Mental Rules</h2>
-
-  <div class="rule">Stay calm after mistakes.</div>
-  <div class="rule">Never resign too early.</div>
-  <div class="rule">Use opponent time to think.</div>
-  <div class="rule">Play solid when winning.</div>
-  <div class="rule">Play active when losing.</div>
-  <div class="rule">Focus only on the current position.</div>
-  <div class="rule">Consistency beats brilliance.</div>
-  <div class="rule">Winning comes from fewer mistakes.</div>
-</div>
-
-<div class="core-rule">
-  <h2>Core Rule</h2>
-
-  <p>
-    Most chess games are not won by genius moves. They are won by making fewer mistakes than your opponent.
-    Control the center, develop pieces, protect your king, and blunder less.
-  </p>
-</div>
-
-  </div></body>
+<body><div class="card">
+  <h1>♟ Chess Action List</h1>  <ol>
+    <li>King Safety First</li>
+    <li>Stop Opponent Threats</li>
+    <li>Look for Forcing Moves (CCT)</li>
+    <li>Choose Best Candidate Move</li>
+    <li>Control Center</li>
+    <li>Develop Pieces</li>
+    <li>Castle King</li>
+    <li>Connect Rooks</li>
+    <li>Check Hanging Pieces</li>
+    <li>Take Free Material</li>
+    <li>Improve Worst Piece</li>
+    <li>Use Open Files</li>
+    <li>Attack Weak Squares</li>
+    <li>Trade When Ahead</li>
+    <li>Increase Activity When Behind</li>
+    <li>Activate King in Endgame</li>
+    <li>Push Passed Pawns</li>
+  </ol>  <div class="core">Core: Safety → Threats → Forcing Moves → Best Move</div>
+</div></body>
 </html>
